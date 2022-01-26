@@ -9,8 +9,8 @@ const UsersList = ({users, selectedUser, deleteUser}) => {
                        <li><h2>{user.first_name} {user.last_name}</h2> </li>
                        <li>{user.email}</li>
                        <li><b>{user.birthday}</b></li>
-                       <button onClick={()=>selectedUser(user)} >Editar</button>
-                       <button onClick={()=>deleteUser(user.id)}>Delete</button>
+                       <button className='edit-btn' onClick={()=>selectedUser(user)} >Editar</button>
+                       <button className='delete-btn' onClick={()=>deleteUser(user.id)}>Delete</button>
                    </ul>
                 ))
             }
